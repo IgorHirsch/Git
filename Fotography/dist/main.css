@@ -368,6 +368,20 @@ html {
 
 .tours {
   background-color: #011820;
+  height: 30rem;
+  position: relative;
+}
+
+.tours::before {
+  top: 0;
+  position: absolute;
+  content: "Tame the wild";
+  text-transform: uppercase;
+  color: #011820;
+  font-size: 10rem;
+  /* text-shadow: 0 0 1px white; */
+  -webkit-text-stroke: 1px white;
+  text-stroke: 1px white;
 }
 
 .tours__heading {

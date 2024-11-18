@@ -4,6 +4,21 @@ $-tours-background-color: $color-secondary-dark;
 
 .tours {
     background-color: $-tours-background-color;
+    height: 30rem;
+    position: relative;
+}
+
+.tours::before {
+    top: 0;
+    position: absolute;
+    content: "Tame the wild";
+    text-transform: uppercase;
+    color: $-tours-background-color;
+    font-size: 10rem;
+    /* text-shadow: 0 0 1px white; */
+  
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
 }
 
 .tours__heading {
@@ -15,5 +30,4 @@ $-tours-background-color: $color-secondary-dark;
     padding-top: 4rem;
     padding-bottom: 4rem;
     font-size: 2rem;
-    
 }
