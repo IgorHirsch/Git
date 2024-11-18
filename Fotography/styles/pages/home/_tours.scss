@@ -111,7 +111,7 @@ $-tours-background-color: $color-secondary-dark;
 
 .tours__card-location {
     font-size: 0.9rem;
-    margin-bottom: 0.33rem;
+    margin-bottom: 0.6rem;
     display: flex;
 }
 
@@ -121,8 +121,14 @@ $-tours-background-color: $color-secondary-dark;
 
 .tours__card-location-text {
     line-height: 1.9rem;
+    padding-left: 0.15rem;
 }
 
 .tours__card-desc {
     font-size: 0.9rem;
+    padding: 1rem 0;    
+    background-image: linear-gradient(90deg, $color-primary 60%, transparent 60%);
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: 100% 0.125rem;
 }
