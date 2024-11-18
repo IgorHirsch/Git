@@ -262,6 +262,8 @@ html {
 @media (max-width: 48em) {
   .motivation__column-text {
     width: 100%;
+    float: none;
+    padding-bottom: 3rem;
   }
 }
 
@@ -294,11 +296,21 @@ html {
 @media (max-width: 62em) {
   .motivation__column-images {
     width: 50%;
+    height: clamp(10rem, calc(25vw + 10rem), 36rem);
   }
 }
 @media (max-width: 48em) {
   .motivation__column-images {
-    width: 100%;
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+    height: clamp(10rem, calc(40vw + 10rem), 36rem);
+  }
+}
+@media (max-width: 36em) {
+  .motivation__column-images {
+    width: 90%;
+    height: clamp(10rem, calc(45vw + 10rem), 36rem);
   }
 }
 
