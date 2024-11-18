@@ -393,11 +393,13 @@ html {
   content: "Tame the wild";
   text-transform: uppercase;
   color: #011820;
-  font-size: 10rem;
+  font-size: min(calc(100vw / 9), 10rem);
   font-weight: bold;
   text-shadow: 0 0 1px white;
   text-align: center;
   z-index: 0;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 @supports (-webkit-text-stroke: 2px rgba(255, 255, 255, 0.2)) or (text-stroke: 2px rgba(255, 255, 255, 0.2)) {
@@ -441,7 +443,7 @@ html {
   letter-spacing: 0.1em;
   text-align: center;
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
   font-size: 2rem;
 }
 
