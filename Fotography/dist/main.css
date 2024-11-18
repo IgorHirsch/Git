@@ -419,6 +419,18 @@ html {
   font-size: 2rem;
 }
 
+.tours__cards {
+  display: flex;
+}
+
+.tours__card {
+  width: 20%;
+}
+
+.tours__card-img {
+  width: 100%;
+}
+
 .tours__card-icon {
   width: 4rem;
   color: white;

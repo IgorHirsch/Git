@@ -43,10 +43,10 @@ $-tours-background-color: $color-secondary-dark;
     @include -tours__before-and-after-stroke(transparent);
 }
 
-.tours__container {
+.tours__container { 
     position: relative;
     z-index: 1;
-}
+} 
 
 
 .tours__heading {
@@ -61,7 +61,19 @@ $-tours-background-color: $color-secondary-dark;
 }
 
 
-.tours__card-icon {
+.tours__cards {
+    display: flex;
+}
+
+.tours__card {
+    width: 20%;
+}
+
+.tours__card-img {
+    width: 100%;
+}
+
+.tours__card-icon { 
     width: 4rem;
     color: white;
 }
