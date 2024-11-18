@@ -68,11 +68,14 @@ $-tours-animation-duration: 0.25s;
 
 .tours__cards {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .tours__card {
-    width: 20%;
+    flex: 0 0 (71rem / 5);
     position: relative;
+    margin-top: 3rem;
     height: 21rem;
     overflow: hidden;
     box-shadow: 0 0 1rem transparent;
@@ -166,6 +169,9 @@ $-tours-animation-duration: 0.25s;
 .tours__card-heading {
     font-size: 1.1rem;
     margin-bottom: 0.25rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .tours__card-location {
@@ -181,6 +187,10 @@ $-tours-animation-duration: 0.25s;
 .tours__card-location-text {
     line-height: 1.9rem;
     padding-left: 0.15rem;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .tours__card-desc {
