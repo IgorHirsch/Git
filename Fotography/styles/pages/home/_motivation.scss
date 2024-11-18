@@ -35,6 +35,20 @@
     position: relative;
 }
 
+/**
+ * @param $top: Position from top (in rem)
+ * @param $left: Position from left (in %)
+ */
+@mixin motivation__image-position($top, $left) {
+    top: $top;
+    left: $left;
+
+    &:hover {
+        top: $top - 0.66rem;
+        left: calc(#{$left} - 0.66rem);
+    }
+}
+
 .motivation__image {
     width: 50%;
     position: absolute;
@@ -43,26 +57,28 @@
 
     &--first {
         width: 75%;
-        right: 0rem;
         z-index: 1;
+
+        @include motivation__image-position(0rem, 25%);
     }
 
     &--second {
         width: 37%;
-        top: 10rem;
-        left: 10%;
         z-index: 2;
+
+        @include motivation__image-position(10rem, 10%);
     }
 
     &--third {
         z-index: 3;
         width: 42%;
-        top: 5rem;
-        left: 40%;
-    }
 
+        @include motivation__image-position(5rem, 40%);
+    }
+    
     &:hover {
         border: 0.33rem solid $color-primary;
         padding: 0.33rem;
+        z-index: 10;
     }
 }
