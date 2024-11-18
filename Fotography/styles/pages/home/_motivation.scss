@@ -32,6 +32,7 @@
 .motivation__column-images {
     float: left;
     width: 66.66%;
+    height: clamp(10rem, calc(35vw + 10rem), 36rem);
     position: relative;
 }
 
@@ -56,7 +57,7 @@
     box-sizing: content-box;
     filter: grayscale(50%);
     transform: scale(1);
-    transition: filter ease-in-out 0.9s, transform ease-in-out 0.5s;
+    transition: filter ease-in-out 0.2s, transform ease-in-out 0.2s;
 
     &--first {
         width: 75%;
