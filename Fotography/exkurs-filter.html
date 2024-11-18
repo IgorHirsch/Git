@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exkurs: Filter</title>
+        <style>
+            @font-face {
+                font-family: "Jost";
+                font-style: normal;
+                font-weight: 100 900;
+                font-display: swap;
+                src: url("fonts/jost/Jost-VariableFont_wght.woff2") format("woff2");
+            }
+            body {
+                font-family: "Jost", sans-serif;
+            }
+ 
+            .heading {
+                filter: blur(0.5rem) drop-shadow(0 0 1rem red);
+            }
+
+            .image {
+                filter: grayscale(100%) drop-shadow(0 0 1rem green);
+            }
+            .image:hover {
+                filter: grayscale(50%) drop-shadow(0 0 1rem aqua);
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h1 class="heading">Filter-Exkurs</h1>
+        <img class="image" src="./images/pexels-benjamin-suter-3617500-mountains.png" />
+    </body>
+</html>
