@@ -39,6 +39,7 @@
     width: 50%;
     position: absolute;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5); 
+    box-sizing: content-box;
 
     &--first {
         width: 75%;
@@ -58,5 +59,10 @@
         width: 42%;
         top: 5rem;
         left: 40%;
+    }
+
+    &:hover {
+        border: 0.33rem solid $color-primary;
+        padding: 0.33rem;
     }
 }
