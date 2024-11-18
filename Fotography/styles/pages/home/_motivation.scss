@@ -25,6 +25,8 @@ $-motivation__image-hover-border: 0.33rem;
 
     @media (max-width: $breakpoint-sm) {
         width: 100%;
+        float: none;
+        padding-bottom: 3rem;
     }
 }
 
@@ -47,6 +49,10 @@ $-motivation__image-hover-border: 0.33rem;
     color: $color-secondary;
     margin-top: 0.2rem;
     font-size: 1.1rem;
+    display: flex;
+    
+    
+    text-align: justify; /* für Edge */
 }
 
 .motivation__column-images {
@@ -57,10 +63,19 @@ $-motivation__image-hover-border: 0.33rem;
 
     @media (max-width: $breakpoint-md) {
         width: 50%;
+        height: clamp(10rem, calc(25vw + 10rem), 36rem);
     }
 
     @media (max-width: $breakpoint-sm) {
-        width: 100%;
+        width: 80%;
+        float: none;
+        margin: 0 auto;
+        height: clamp(10rem, calc(40vw + 10rem), 36rem);
+    }
+
+    @media (max-width: $breakpoint-xs) {
+        width: 90%;
+        height: clamp(10rem, calc(45vw + 10rem), 36rem);
     }
 }
 

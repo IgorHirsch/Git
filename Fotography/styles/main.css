@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Jost";
   font-style: normal;
@@ -262,6 +263,8 @@ html {
 @media (max-width: 48em) {
   .motivation__column-text {
     width: 100%;
+    float: none;
+    padding-bottom: 3rem;
   }
 }
 
@@ -283,6 +286,8 @@ html {
   color: #26464d;
   margin-top: 0.2rem;
   font-size: 1.1rem;
+  display: flex;
+  text-align: justify; /* für Edge */
 }
 
 .motivation__column-images {
@@ -294,11 +299,21 @@ html {
 @media (max-width: 62em) {
   .motivation__column-images {
     width: 50%;
+    height: clamp(10rem, 25vw + 10rem, 36rem);
   }
 }
 @media (max-width: 48em) {
   .motivation__column-images {
-    width: 100%;
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+    height: clamp(10rem, 40vw + 10rem, 36rem);
+  }
+}
+@media (max-width: 36em) {
+  .motivation__column-images {
+    width: 90%;
+    height: clamp(10rem, 45vw + 10rem, 36rem);
   }
 }
 
