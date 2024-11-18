@@ -381,8 +381,8 @@ html {
 
 .tours {
   background-color: #011820;
-  height: 30rem;
   position: relative;
+  padding-bottom: 5rem;
 }
 
 .tours::after, .tours::before {
@@ -451,15 +451,36 @@ html {
 
 .tours__card {
   width: 20%;
+  position: relative;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.tours__card-icon-container {
+  background-color: #00e29c;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .tours__card-img {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .tours__card-icon {
   width: 4rem;
   color: white;
+  display: block;
+}
+
+.tours__card-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
