@@ -677,4 +677,37 @@ html {
   padding: 4rem 0 4rem 0;
 }
 
+.offers {
+  background-color: #f0f0f0;
+  min-height: 5rem;
+}
+
+.offers__container {
+  max-width: 75rem;
+  margin: 0px auto;
+  padding: 0 2rem;
+  display: flex;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.offers__container::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+@media (max-width: 36em) {
+  .offers__container {
+    padding: 0 1rem;
+  }
+}
+
+.offers__card {
+  flex: 1 0 0px;
+  margin: 0 0.66rem;
+  background-color: white;
+  box-shadow: 0.5rem 0.5rem 2rem black;
+  border-left: 0.0625rem solid gray;
+  border-bottom: 0.75rem solid #00e29c;
+}
+
 /*# sourceMappingURL=main.css.map */
