@@ -251,7 +251,7 @@ html {
 }
 
 .button {
-  border: 0.125rem solid #00e29c;
+  border: 0.125rem solid currentColor;
   border-radius: 10000rem;
   color: #00e29c;
   text-decoration: none;
@@ -259,6 +259,16 @@ html {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.2rem;
+}
+.button:hover {
+  color: #1cffb9;
+}
+
+.button--white {
+  color: white;
+}
+.button--white:hover {
+  color: #e6e6e6;
 }
 
 .motivation {
