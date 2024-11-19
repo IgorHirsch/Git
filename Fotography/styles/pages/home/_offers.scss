@@ -4,6 +4,7 @@
 @use "../../abstracts" as *;
 
 $-offers-card-border-width: math.div(1rem, 16);
+$-offers-card-margin: 0.66rem;
 
 .offers {
     background-color: rgb(240, 240, 240);
@@ -11,16 +12,17 @@ $-offers-card-border-width: math.div(1rem, 16);
 }
 
 .offers__container {
-    @include make-container();
-
     display: flex;
+    flex-wrap: wrap;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    margin-left: -$-offers-card-margin;
+    margin-right: -$-offers-card-margin;
 }
 
 .offers__card {
     flex: 1 0 0px;
-    margin: 0 0.66rem;
+    margin: 0 $-offers-card-margin;
     padding: 2rem 1rem;
     background-color: white;
     box-shadow: 0.5rem 0.5rem 2rem black;
@@ -39,7 +41,6 @@ $-offers-card-border-width: math.div(1rem, 16);
     left: -$-offers-card-border-width;
     right: -$-offers-card-border-width;
     height: 0.75rem;
-    
     background-color: $color-primary;
     border-left: $-offers-card-border-width solid color.scale($color-primary, $saturation: -50%, $lightness: 25%);
     border-right: $-offers-card-border-width solid color.scale($color-primary, $saturation: -50%, $lightness: 25%);
