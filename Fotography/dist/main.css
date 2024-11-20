@@ -290,6 +290,11 @@ html {
   border: 0.125rem solid #011820;
 }
 
+.button--slim {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .motivation {
   margin-top: 2rem;
   padding-bottom: 3rem;
@@ -827,10 +832,19 @@ html {
   bottom: -0.0625rem;
   z-index: 2;
   background-color: #00e29c;
+  background-image: linear-gradient(90deg, transparent calc(50% - 0.03125rem), white calc(50% - 0.03125rem), white calc(50% + 0.03125rem), transparent calc(50% + 0.03125rem)), linear-gradient(135deg, #00e29c 0%, #00b57d 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center center;
+  background-size: 100% calc(50% - 4rem), 100% 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+.offers__card:hover .offers__card-hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
