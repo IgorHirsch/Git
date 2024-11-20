@@ -279,6 +279,17 @@ html {
   color: #e6e6e6;
 }
 
+.button--secondary {
+  color: white;
+  background-color: #26464d;
+  border: 0.125rem solid #26464d;
+}
+.button--secondary:hover {
+  color: white;
+  background-color: #011820;
+  border: 0.125rem solid #011820;
+}
+
 .motivation {
   margin-top: 2rem;
   padding-bottom: 3rem;
@@ -806,6 +817,20 @@ html {
   font-weight: 500;
   font-size: 2rem;
   line-height: 0.9em;
+}
+
+.offers__card-hover {
+  position: absolute;
+  top: -0.0625rem;
+  left: -0.0625rem;
+  right: -0.0625rem;
+  bottom: -0.0625rem;
+  z-index: 2;
+  background-color: #00e29c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */

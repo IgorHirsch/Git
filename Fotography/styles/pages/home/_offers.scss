@@ -154,3 +154,18 @@ $-offers-card-margin: 0.66rem;
     font-size: 2rem;
     line-height: 0.9em;
 }
+
+.offers__card-hover {
+    position: absolute;
+    top: -$-offers-card-border-width;
+    left: -$-offers-card-border-width;
+    right: -$-offers-card-border-width;
+    bottom: -$-offers-card-border-width;
+    z-index: 2;
+
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
