@@ -776,12 +776,22 @@ html {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   display: flex;
+  background-image: linear-gradient(90deg, transparent calc(50% - 0.03125rem), rgba(0, 0, 0, 0.15) calc(50% - 0.03125rem), rgba(0, 0, 0, 0.15) calc(50% + 0.03125rem), transparent calc(50% + 0.03125rem));
+  background-repeat: no-repeat;
+  background-size: 100% 75%;
+  background-position: center center;
 }
 
 .offers__content-info-level, .offers__content-info-duration {
   flex: 1 1 50%;
   color: #26464d;
   text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.offers__content-info-duration-text {
+  padding-left: 0.33rem;
 }
 
 /*# sourceMappingURL=main.css.map */
