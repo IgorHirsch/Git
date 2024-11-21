@@ -89,10 +89,15 @@ $-half-pixel-width: math.div(1rem, 32);
     bottom: 0;
     left: 0;
     right: 0;
-    height: 4rem;
+    height: 4rem; 
+
     background-image: linear-gradient(-$slope-incline, white 49.7%, transparent 50.3%);
     background-repeat: no-repeat;
     background-position: 50% 100%;
+
+    @media (max-width: $breakpoint-sm) {
+        height: 5rem;
+    }
 }
 
 .offers__image {

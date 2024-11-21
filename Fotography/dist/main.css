@@ -776,6 +776,11 @@ html {
   background-repeat: no-repeat;
   background-position: 50% 100%;
 }
+@media (max-width: 48em) {
+  .offers__image-container::after {
+    height: 5rem;
+  }
+}
 
 .offers__image {
   width: 100%;
