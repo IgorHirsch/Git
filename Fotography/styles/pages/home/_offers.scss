@@ -217,8 +217,29 @@ $-half-pixel-width: math.div(1rem, 32);
 
 
 .offers__card-container--flip {
+    perspective: 50rem;
+
+    .offers__card {
+        transition: transform 1s ease-in-out;
+        transform-style: preserve-3d;
+    }
+
+    &:hover .offers__card {
+        transform: rotateY(180deg);
+    }
+
     .offers__card-primary {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
         transform: rotateY(0deg);
         transform-style: preserve-3d;
+    }
+
+    .offers__card-hover {
+        transform: rotateY(180deg);
+        opacity: 1;
+
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
 }
